@@ -151,8 +151,9 @@ def problem5(seq_of_seq):
     a = []
     for k in range(len(seq_of_seq)):
         for j in range(len(seq_of_seq[k])):
-            if seq_of_seq[k][j]
-
+            num = seq_of_seq[k][j]
+            if num >= seq_of_seq[k][j - 1]:
+                a = a + [num]
     return a
 
 ###############################################################################
